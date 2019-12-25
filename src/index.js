@@ -4,26 +4,30 @@ import ThreeScene from "./ThreeScene";
 
 import "./styles.css";
 
-function App() {
-  return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center"
-      }}
-    >
-      <h1>React with ThreeJS</h1>
-      <h2>Start editing to see some magic happen!</h2>
+const names = ["eyeball", "freedom", "eyeball", "freedom"]
+const scale = [1, 0.02, 1, 0.02]
 
-      <ThreeScene />
-    </div>
-  );
+function App() {
+    return (
+        <div
+            className="App"
+            style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: 'space-between',
+                width: '100%',
+
+            }}>
+            {names.map((item, index) => <ThreeScene name={item} key={index} scale={scale[index]}/>)}
+
+
+        </div>
+    );
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<App/>, rootElement);
 
 
 
