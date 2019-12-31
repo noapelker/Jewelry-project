@@ -2,7 +2,7 @@
     width: 100%;
     height: 70px;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -16,12 +16,11 @@
     display: flex;
     padding-left: 50px;
 }
-
 .rightText {
     align-self: flex-end;
     cursor: pointer;
     padding-bottom: 10px;
-    font-size: 1em;
+    font-size: 1.1em;
 
 }
 
@@ -38,7 +37,6 @@
     justify-content: flex-end;
     padding-right: 2%;
 }
-
 .sideContainer {
     width: 33%;
     z-index: 2;
@@ -61,7 +59,7 @@
 
 span {
     align-self: center;
-    color: white;
+    color: #212121;
     font-size: 1.5em;
 }
 .menuImage:hover{

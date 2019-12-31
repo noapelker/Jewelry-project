@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import Menu from './Menu';
+import Menu from './Components/Menu';
 import Home from './Components/Home'
+import Design from "./Components/Design";
+
 class Main extends Component {
     constructor(props, context) {
         super(props, context);
@@ -10,9 +12,10 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <div className={"AppContainer"}/>
-                <Menu/>
                 <Home />
+                {/*<Design/>*/}
+                <Menu/>
+
             </div>
         );
     }

@@ -1,92 +1,62 @@
 import React from 'react';
 import '../CssFolder/Home.css'
+import ring from './ringVideo.mp4';
 
-const Home = props => {
+import {HomeTxt} from "../TextBlocks/TextBlocksEN";
+import ImageHolder from '../Components/ImageHolder'
+
+const Home = () => {
     return (
         <div>
+            <div className={"AppContainer"}/>
+            <video className={'videoClass'} autoPlay={true} loop={true} muted={true}>
+                <source src={ring} type='video/mp4'/>
+            </video>
             <div className={"textContainer"}>
-                <span className={"homeTitle"}>Create your own style</span>
-                <p className={"homeText"}> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed
-                    diam nonummy nibh
-                    euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                <span className={"homeTitle"}>{HomeTxt.titles[0]}</span>
+                <p className={"homeText"}>
+                    {HomeTxt.text[0]}
                 </p>
             </div>
             <div className={'imgContainer'}>
-                <div className={'imageHomeContainer'} style={{paddingRight: 10}}>
-                    <span className={'imgText'}>  Create your own style </span>
-
-                    <img alt={' '} className={'imageHome'}
-                         src={'../../Photos/modelHome1.jpeg'}/>
-                </div>
-                <div className={'imageHomeContainer'} style={{paddingRight: 10}}>
-                    <span className={'imgText'}>  Find ready design</span>
-
-                    <img alt={' '} className={'imageHome'}
-                         src={'../../Photos/modelHome2.jpeg'}/>
-                </div>
-                <div className={'imageHomeContainer'}>
-                    <span className={'imgText'}>  Create your own line</span>
-                    <img alt={' '} className={'imageHome'} src={'../../Photos/modelHome3.jpg'}/>
-                </div>
+                {HomeTxt.images.map((item, index) => <ImageHolder key={index}
+                                                                  source={item.url}
+                                                                  text={item.name}
+                                                                  imageClass={'imageHome'}
+                                                                  parentClass={'imageHomeContainer'}
+                                                                  textClass={'imgText'}/>)}
             </div>
             <div className={"textContainerLast"}>
-                <span className={"homeTitle"}>Discover Logo</span>
-                <p className={"homeText"}> Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed
-                    diam nonummy nibh
-                    euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                <span className={"homeTitle"}>{HomeTxt.titles[3]}</span>
+                <p className={"homeText"}>{HomeTxt.text[1]}
                 </p>
                 <div className={'discoverParent'}>
                     <div className={'discoverContainer'}>
                         <div className={'discoverCol'}>
-                            <span className={"discoverTitle"}> Official channels</span>
-                            <span className={"discoverText"}>Facebook</span>
-                            <span className={"discoverText"}>Instagram</span>
-                            <span className={"discoverText"}>Youtube</span>
-                            <span className={"discoverText"}>Pinterest</span>
+                            <span className={"discoverTitle"}> {HomeTxt.titles[4]}</span>
+                            {HomeTxt.channels.map((item, index) => <span key={index}
+                                                                         className={"discoverText"}>{item}</span>)}
                             <br/>
                             <br/>
-                            <span className={"discoverTitle"}> Legal notice</span>
-                            <span className={"discoverText"}>Terms of use</span>
-                            <span className={"discoverText"}>Privacy notice</span>
-                            <span className={"discoverText"}>Cookies</span>
-
+                            <span className={"discoverTitle"}>{HomeTxt.titles[5]}</span>
+                            {HomeTxt.legal.map((item, index) => <span key={index}
+                                                                      className={"discoverText"}>{item}</span>)}
                         </div>
                         <div className={'discoverCol'}>
-                            <span className={"discoverTitle"}> Our collection</span>
-                            <span className={"discoverText"}>Classic</span>
-                            <span className={"discoverText"}>Modern</span>
-                            <span className={"discoverText"}>Magical</span>
-                            <span className={"discoverText"}>Modern</span>
-                            <span className={"discoverText"}>Unique</span>
-                            <span className={"discoverText"}>Diamond</span>
-                            <br />
-                            <br />
-                            <span className={"discoverTitle"}> Service</span>
-                            <span className={"discoverText"}>Contact us</span>
-                            <span className={"discoverText"}>Our delivery</span>
-                            <span className={"discoverText"}>FAQ</span>
-
+                            <span className={"discoverTitle"}> {HomeTxt.titles[6]}</span>
+                            {HomeTxt.collection.map((item, index) => <span key={index}
+                                                                           className={"discoverText"}>{item}</span>)}
+                            <br/>
+                            <br/>
+                            <span className={"discoverTitle"}> {HomeTxt.titles[7]}</span>
+                            {HomeTxt.service.map((item, index) => <span key={index}
+                                                                        className={"discoverText"}>{item}</span>)}
                         </div>
                         <div className={'discoverCol'}>
-                            <span className={"discoverTitle"}> Languages</span>
-                            <br/>
-                            <span className={"discoverText"}>English</span>
-                            <span className={"discoverText"}>Italian</span>
-                            <span className={"discoverText"}>简体中文</span>
-                            <span className={"discoverText"}>Hebrew</span>
-                            <span className={"discoverText"}>繁體中文</span>
-                            <span className={"discoverText"}>Русский</span>
-                            <span className={"discoverText"}> Polski</span>
-                            <span className={"discoverText"}> Français</span>
-                            <span className={"discoverText"}> Deutsch</span>
-                            <span className={"discoverText"}> Español</span>
-                            <span className={"discoverText"}> 日本語</span>
+                            <span className={"discoverTitle"}>  {HomeTxt.titles[8]}</span>
+                            {HomeTxt.languages.map((item, index) => <span key={index}
+                                                                          className={"discoverText"}>{item}</span>)}
                         </div>
-
                     </div>
                 </div>
             </div>

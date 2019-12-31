@@ -1,6 +1,6 @@
 .textContainer {
     margin-top: 100vh;
-    height: 50vh;
+    height: 40vh;
     background-color: white;
     display: flex;
     justify-content: space-evenly;
@@ -10,7 +10,7 @@
 
 .discoverContainer {
     display: flex;
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 70%;
     flex-direction: row-reverse;
     align-self: center;
@@ -53,9 +53,12 @@
     align-self: center;
     text-align: center;
 }
-
+.videoClass{
+    width: 100vw;
+    margin-top: 70px;
+}
 .textContainerLast {
-    margin-top: 20vh;
+    margin-top: 15vh;
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
@@ -64,20 +67,21 @@
 }
 
 .imgContainer {
-    height: 50vh;
-    width: 100vw;
+    margin-top: 100px;
     display: flex;
+    width: 100vw;
+    align-self: center;
+    flex-direction: row;
     justify-content: center;
-    justify-self: center;
-}
 
-.imageHomeContainer {
-    width: 27%;
 }
-
+.imageHomeContainer{
+    margin-right: 5px;
+    margin-left: 5px;
+}
 .imageHome {
     transition: transform .5s;
-    width: 100%;
+    width: 22vw;
     height: 100%;
 
 }
@@ -93,7 +97,7 @@
 .imageHomeContainer:focus .imgText {
     transform: scale(0.95);
     opacity: 0.8;
-    margin-top: 7px;
+    margin-top: 0.5%;
     cursor: pointer;
 }
 
@@ -103,7 +107,7 @@
     transition: all .5s;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.3);
-    width: 27%;
+    width: 22vw;
     z-index: 2;
     padding-bottom: 7px;
     padding-top: 7px;

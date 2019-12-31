@@ -1,0 +1,81 @@
+.designContainer {
+    background-image: url("../modelDesign.jpg");
+    width: 100vw;
+    opacity: 0.2;
+    height: 100vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+}
+
+.textDesign {
+    width: 100%;
+    color: #212121;
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.titleDesign {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: #212121;
+
+
+}
+
+.imagesContainer {
+    margin-top: 100px;
+    display: flex;
+    width: 90vw;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imgTextDesign {
+    color: white;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    margin-top: 70%;
+    transition: all .5s;
+    font-size: 2em;
+}
+
+.imgDesignContainer {
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    height: 21vw;
+}
+
+.imgDesign {
+    width: 22vw;
+    height: 18vw;
+    position: absolute;
+    transition: transform .5s;
+}
+
+
+
+.imgDesignContainer:hover .imgDesign,
+.imgDesignContainer:focus .imgDesign {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+
+.designPageContainer {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    justify-content: center;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
