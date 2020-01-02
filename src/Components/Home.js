@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CssFolder/Home.css'
-import ring from './ringVideo.mp4';
+// import ring from './ringVideo.mp4';
 
 import {HomeTxt} from "../TextBlocks/TextBlocksEN";
 import ImageHolder from '../Components/ImageHolder'
@@ -9,9 +9,9 @@ const Home = () => {
     return (
         <div>
             <div className={"AppContainer"}/>
-            <video className={'videoClass'} autoPlay={true} loop={true} muted={true}>
-                <source src={ring} type='video/mp4'/>
-            </video>
+            {/*<video className={'videoClass'} autoPlay={true} loop={true} muted={true}>*/}
+                {/*<source src={ring} type='video/mp4'/>*/}
+            {/*</video>*/}
             <div className={"textContainer"}>
                 <span className={"homeTitle"}>{HomeTxt.titles[0]}</span>
                 <p className={"homeText"}>

@@ -1,5 +1,5 @@
 .designContainer {
-    background-image: url("../modelDesign.jpg");
+    background-image: url("../../modelDesign.jpg");
     width: 100vw;
     opacity: 0.2;
     height: 100vh;
@@ -12,11 +12,19 @@
 .textDesign {
     width: 100%;
     color: #212121;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 1.2em;
     text-align: center;
 }
+.titlesContainer{
+    flex-direction: column;
+    display: flex;
+    position: absolute;
 
+    top: 150px;
+    align-self: center;
+
+}
 .titleDesign {
     text-align: center;
     width: 100%;
@@ -25,11 +33,49 @@
 
 
 }
+.buttonsContainerDesign{
+    display: flex;
+    width: 40%;
+    align-self: center;
+    justify-content: space-between;
 
+}
+.nextButtonDesign{
+    width: 60px;
+    align-self: center;
+    cursor: pointer;
+    z-index: 10;
+    height: 60px;
+}
+.prevButtonDesign{
+transform: rotateY(180deg);
+}
+.nextButtonDesign:hover{
+    opacity: 0.8;
+}
+.nameDesign{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.6);
+    width: 40%;
+    height: 30px;
+    vertical-align: center;
+    background-color: rgba(0,0,0,0);
+    align-self: center;
+    margin-top: 15%;
+    outline-width: 0;
+
+    font-size: 20px;
+}
+.levelOneContainer{
+    display: flex;
+    flex-direction: column;
+}
 .imagesContainer {
     margin-top: 100px;
     display: flex;
     width: 90vw;
+    /*margin-left: 5vw;*/
+    /*margin-right: 5vw;*/
     align-self: center;
     flex-direction: row;
     justify-content: space-between;
@@ -40,7 +86,7 @@
     width: 100%;
     z-index: 2;
     text-align: center;
-    margin-top: 70%;
+    margin-top: 65%;
     transition: all .5s;
     font-size: 2em;
 }
@@ -73,8 +119,7 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
-    justify-content: center;
-    margin-top: 70px;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
 

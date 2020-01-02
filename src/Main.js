@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Menu from './Components/Menu';
 import Home from './Components/Home'
-import Design from "./Components/Design";
+import Design from "./Components/DesignPages/Design";
 
 class Main extends Component {
     constructor(props, context) {
@@ -12,8 +12,8 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <Home />
-                {/*<Design/>*/}
+                {/*<Home />*/}
+                <Design/>
                 <Menu/>
 
             </div>

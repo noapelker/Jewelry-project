@@ -1,5 +1,3 @@
-import React from "react";
-
 export const DesignTxt = {
     images: [
         {
@@ -18,7 +16,8 @@ export const DesignTxt = {
             url: 'ring.jpg',
             name: 'Ring'
         }],
-    titles: [' Create your own product', 'Step 1: Choose type']
+    titles: [' Create your own product', 'Step 1: Choose type', 'Step 2: Choose a name'],
+
 };
 export const MenuTxt = {
     titles: ['Home', 'Explore', 'Create']

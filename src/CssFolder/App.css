@@ -4,7 +4,7 @@ body {
 
 }
 .AppContainer{
-    /*background-image: url("../Model.jpg");*/
+    background-image: url("../Model.jpg");
     width: 100vw;
     height: 100vh;
     background-size:cover ;
