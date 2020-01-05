@@ -5,7 +5,9 @@ import ImageHolder from '../../Components/ImageHolder'
 const DesignLevelOne = props => {
     return (
         <div className={'levelOneContainer'}>
-
+         <span className={'textDesign'}>
+                    {DesignTxt.titles.Step1}
+                </span>
             <div className={'imagesContainer'}>
                 {DesignTxt.images.map((item, index) => <ImageHolder key={index}
                                                                     source={item.url}
@@ -13,7 +15,10 @@ const DesignLevelOne = props => {
                                                                     imageClass={'imgDesign'}
                                                                     parentClass={'imgDesignContainer'}
                                                                     textClass={'imgTextDesign'}
-                                                                    onClick={props.nextPage}/>)}
+                                                                    changeType={props.changeType}
+                                                                    path={item.path}
+                />)
+                }
             </div>
         </div>
     );

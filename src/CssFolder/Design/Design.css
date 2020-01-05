@@ -28,6 +28,7 @@
 .titleDesign {
     text-align: center;
     width: 100%;
+    margin-top: 100px;
     font-weight: bold;
     color: #212121;
 
@@ -53,6 +54,9 @@ transform: rotateY(180deg);
 .nextButtonDesign:hover{
     opacity: 0.8;
 }
+a{
+    text-decoration: none!important;
+}
 .nameDesign{
     border: none;
     border-bottom: 2px solid rgba(0,0,0,0.6);
@@ -61,7 +65,7 @@ transform: rotateY(180deg);
     vertical-align: center;
     background-color: rgba(0,0,0,0);
     align-self: center;
-    margin-top: 15%;
+    margin-top: 10%;
     outline-width: 0;
 
     font-size: 20px;
@@ -106,7 +110,10 @@ transform: rotateY(180deg);
 }
 
 
-
+.levelTwoContainer{
+    display: flex;
+    flex-direction: column;
+}
 .imgDesignContainer:hover .imgDesign,
 .imgDesignContainer:focus .imgDesign {
     transform: scale(1.03);

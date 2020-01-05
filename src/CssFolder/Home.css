@@ -50,6 +50,7 @@
     font-size: 0.9em;
     margin-bottom: 5px;
     font-weight: bold;
+    cursor: pointer;
     align-self: center;
     text-align: center;
 }

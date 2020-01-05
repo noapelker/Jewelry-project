@@ -2,46 +2,33 @@ import React, {useState} from 'react';
 import '../../CssFolder/Design/Design.css'
 import {DesignTxt} from "../../TextBlocks/TextBlocksEN";
 import DesignLevelOne from "./DesignLevelOne";
-import DesignLevelTwo from "./DesignLevelTwo";
+import DesignLevelSix from "./DesignLevelTwo";
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 const Design = props => {
-    const [Counter, SetCounter] = useState(0);
 
-    const changeToNextPage = (value) => () => {
-
-        if (Counter === 0)
-            setPage(<DesignLevelTwo name={value}/>);
-        SetCounter(Counter + 1);
-
+    const [type, SetType] = useState('none');
+    const changeType = (value) => () => {
+        SetType(value);
     };
-    const [CurrentPage, setPage] = useState(<DesignLevelOne nextPage={changeToNextPage}/>);
 
     return (
 
         <div>
+
             <div className={'designContainer'}/>
             <div className={'designPageContainer'}>
-                <div className={'titlesContainer'}>
-                <span className={'titleDesign'}>
-                    {DesignTxt.titles[0]}
+                 <span className={'titleDesign'}>
+                    {DesignTxt.titles.MainTitle}
                 </span>
-                    <span className={'textDesign'}>
-                    {DesignTxt.titles[Counter + 1]}
-                </span>
-                </div>
-                <br/>
-                {CurrentPage}
-                {Counter >= 1 &&
-                <div className={'buttonsContainerDesign'}>
-                    <img alt={''} src={'../../Photos/DesignNextButton.png'}
-                         className={'nextButtonDesign prevButtonDesign'}/>
-                    <img alt={''} src={'../../Photos/DesignNextButton.png'}
-                         className={'nextButtonDesign'}/>
-
-
-                </div>
-                }
-
+                <BrowserRouter>
+                    <div>
+                        <Route exact path="/design"
+                               component={() => <DesignLevelOne changeType={changeType}/>}/>
+                        <Route exact path="/designSteps"
+                               component={() => <DesignLevelSix name={type}/>}/>
+                    </div>
+                </BrowserRouter>
             </div>
 
         </div>
