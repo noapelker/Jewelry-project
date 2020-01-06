@@ -1,0 +1,21 @@
+
+.sortMenuContainer {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+}
+
+.css-2b097c-container {
+    width: 50% !important;
+    margin-top: 5px;
+    height: fit-content;
+}
+.stonesContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ReactGridGallery{
+    width: 100%;
+    margin-top: 10px;
+}

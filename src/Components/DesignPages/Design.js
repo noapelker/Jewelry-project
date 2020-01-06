@@ -2,40 +2,44 @@ import React, {useState} from 'react';
 import '../../CssFolder/Design.css'
 import {DesignTxt} from "../../TextBlocks/TextBlocksEN";
 import DesignLevelOne from "./DesignLevelOne";
-import DesignLevelBase from "./DesignLevelBase";
-import DesignLevelSix from "./DesignLevelSix";
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import '../../CssFolder/Home.css'
+import DesignBase from "./DesignBase";
+import DesignStone from "./DesignStone";
 
 
 const Design = props => {
 
     const [type, SetType] = useState('none');
-    const changeType = (value) => () => {
-        SetType(value);
-    };
+    const [base, SetBase] = useState(localStorage.getItem('base')||0);
+
 
     return (
 
         <div>
 
-            <div className={'designContainer'}/>
-            <div className={'designPageContainer'}>
-                 <span className={'titleDesign'}>
-                    {DesignTxt.titles.MainTitle}
-                </span>
+
                 <BrowserRouter>
                     <div>
-                        <Route exact path="/design"
-                               component={() => <DesignLevelOne changeType={changeType}/>}/>
-                        <Route exact path="/designStepTwo"
-                               component={() => <DesignLevelBase name={type}/>}/>
-                        <Route exact path="/designSteps"
-                               component={() => <DesignLevelSix name={type}/>}/>
+                        <Switch>
+                            <Route exact path="/design"
+                                   component={() => <DesignLevelOne changeType={(value) => () => {
+                                       SetType(value)
+                                   }}/>}/>
+                            <Route exact path="/designBase"
+                                   component={() => <DesignBase name={type}
+                                                                changeBase={(value) => () => {
+                                                                    SetBase(value);
+                                                                    localStorage.setItem('base',value);
+
+                                                                }}/>}/>
+                            <Route exact path="/designStone"
+                                   component={() => <DesignStone base={base}/>}/>
+                        </Switch>
 
                     </div>
                 </BrowserRouter>
-            </div>
+
 
         </div>
     );

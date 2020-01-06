@@ -20,7 +20,6 @@
     flex-direction: column;
     display: flex;
     position: absolute;
-
     top: 150px;
     align-self: center;
 
@@ -59,7 +58,18 @@ transform: rotateY(180deg);
 a{
     text-decoration: none!important;
 }
-
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.1;
+}
+.enable-link {
+    pointer-events: unset;
+    opacity:1;
+    transition: all .2s;
+}
+.enable-link:hover {
+    transform:scale(1.5);
+}
 .textBase{
     color: #212121;
     margin-top: 10px;

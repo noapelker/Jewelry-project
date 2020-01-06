@@ -3,129 +3,275 @@ export const DesignTxt = {
         {
             url: 'bracelet.jfif',
             name: 'Bracelet',
-            path: 'designStepTwo'
+            path: 'designBase'
         },
         {
             url: 'earrings.webp',
             name: 'Earring',
-            path: 'designStepTwo'
+            path: 'designBase'
 
         },
         {
             url: 'necklace.jpg',
             name: 'Necklace',
-            path: 'designStepTwo'
+            path: 'designBase'
 
         },
         {
             url: 'ring.jpg',
             name: 'Ring',
-            path: 'designStepTwo'
+            path: 'designBase'
 
         }],
     titles: {
         "MainTitle": 'Create your own product',
         "Step1": 'Step 1: Choose type',
         "Step2": 'Step 2: Choose a name',
-        "baseStep":'Step 3: Choose the base material'
+        "baseStep": 'Step 3: Choose the base material'
     },
-    earring: [{
+    DBearring: [{
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
         caption: "Sexy lipstick",
-        tags: [{value: "Sexy lipstick"}]
+        tags: [{value: "Sexy lipstick", title: 'Lipstick'}]
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
         caption: "EX",
-        tags: [{value: "EX"}]
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        tags: [{value: "EX", title: 'EX'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        key:0,
+        thumbnail: '../../../Photos/earrings.webp',
         caption: "Just FREEDOM",
-        tags: [{value: "Just FREEDOM"}]
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        tags: [{value: "Just FREEDOM", title: 'JustFreedom'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
         caption: "Salty",
-        tags: [{value: "Salty"}]
+        key:1,
+        tags: [{value: "Salty", title: 'Salty'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        key:2,
+        thumbnailHeight: 200,
         caption: "Beach get away",
-        tags: [{value: "Beach get away"}]
+        tags: [{value: "Beach get away", title: 'Beach'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        key:3,
+        thumbnailHeight: 200,
         caption: "Just relaxing",
-        tags: [{value: "Just relaxing"}]
+        tags: [{value: "Just relaxing", title: 'Relax'}]
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
         caption: "Winter has come",
-        tags: [{value: "Winter has come"}]
+        key:4,
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        tags: [{value: "Winter has come", title: 'Winter'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        key:5,
         caption: "Jin & Tonic",
-        tags: [{value: "Jin & Tonic"}]
+        tags: [{value: "Jin & Tonic", title: 'Jin'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        key:6,
         caption: "Relax ",
-        tags: [{value: "Free stone"}]
+        tags: [{value: "Free stone", title: 'Free'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
         caption: "Blue way ",
-        tags: [{value: "Blue way"}]
+        thumbnailWidth: 250,
+        key:7,
+        thumbnailHeight: 200,
+        tags: [{value: "Blue way", title: 'Blue'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
         caption: "Sophisticated ",
-        tags: [{value: "Sophisticated"}]
+        tags: [{value: "Sophisticated", title: 'Sophisticated'}]
 
 
     }, {
         src: '../../../Photos/earrings.webp',
-        thumbnail:'../../../Photos/earrings.webp',
-        isSelected: false,
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        key:4,
         caption: "Mango shake",
-        tags: [{value: "Mango shake"}]
+        tags: [{value: "Mango shake", title: 'Mango'}]
 
 
-    }]
+    }],
+    DBStones: [{
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        key:0,
+        caption: "Sexy lipstick",
+        tags: [{value: "Sexy lipstick", title: 'Lipstick'}]
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        caption: "EX",
+        key:1,
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        tags: [{value: "EX", title: 'EX'}]
 
 
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        caption: "Just FREEDOM",
+        key:2,
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        tags: [{value: "Just FREEDOM", title: 'JustFreedom'}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        caption: "Salty",
+        key:3,
+        tags: [{value: "Salty", title: 'Salty'}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        key:4,
+        caption: "Beach get away",
+        tags: [{value: "Beach get away", title: 'Beach'}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        caption: "Just relaxing",
+        key:5,
+        tags: [{value: "Just relaxing", title: 'Relax'}]
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        caption: "Winter has come",
+        thumbnailWidth: 250,
+        key:6,
+        thumbnailHeight: 200,
+        tags: [{value: "Winter has come", title: 'Winter'}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        key:7,
+        caption: "Jin & Tonic",
+        tags: [{value: "Jin & Tonic", title: 'Jin'}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        key:8,
+        caption: "Relax ",
+        tags: [{value: "Free stone", title: 'Free'}]
+
+
+    }, {
+        key:9,
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        caption: "Blue way ",
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        tags: [{value: "Blue way", title: 'Blue'}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        key:10,
+        thumbnailHeight: 200,
+        caption: "Sophisticated ",
+        tags: [{value: "Sophisticated", title: 'Sophisticated'}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail: '../../../Photos/earrings.webp',
+        thumbnailWidth: 250,
+        thumbnailHeight: 200,
+        caption: "Mango shake",
+        key:11,
+        tags: [{value: "Mango shake", title: 'Mango'}]
+
+
+    }],
+    DBOptionsType: [{value: 'Diamond', label: 'Diamond'}, {
+        value: 'Chen',
+        label: 'Chen'
+    }, {value: 'Pearl', label: 'Pearl'}, {value: 'Cristal', label: 'Cristal'}],
+    DBOptionsColor: [{value: 'Gold', label: 'Gold'}, {
+        value: 'Silver',
+        label: 'Silver'
+    }, {value: 'White gold', label: 'White gold'}, {value: 'Black silver', label: 'Black silver'}]
 };
 export const MenuTxt = {
 
