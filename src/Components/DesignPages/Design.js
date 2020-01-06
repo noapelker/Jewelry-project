@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
-import '../../CssFolder/Design/Design.css'
+import '../../CssFolder/Design.css'
 import {DesignTxt} from "../../TextBlocks/TextBlocksEN";
 import DesignLevelOne from "./DesignLevelOne";
-import DesignLevelSix from "./DesignLevelTwo";
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import DesignLevelBase from "./DesignLevelBase";
+import DesignLevelSix from "./DesignLevelSix";
+import {BrowserRouter, Route} from 'react-router-dom';
+import '../../CssFolder/Home.css'
+
 
 const Design = props => {
 
@@ -25,8 +28,11 @@ const Design = props => {
                     <div>
                         <Route exact path="/design"
                                component={() => <DesignLevelOne changeType={changeType}/>}/>
+                        <Route exact path="/designStepTwo"
+                               component={() => <DesignLevelBase name={type}/>}/>
                         <Route exact path="/designSteps"
                                component={() => <DesignLevelSix name={type}/>}/>
+
                     </div>
                 </BrowserRouter>
             </div>

@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import Menu from './Components/Menu';
 import Home from './Components/Home'
 import Design from "./Components/DesignPages/Design";
-import DesignLevelSix from "./Components/DesignPages/DesignLevelTwo";
-import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Create from "./Components/Create";
 import Explore from "./Components/Explore";
 

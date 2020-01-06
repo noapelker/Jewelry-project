@@ -1,17 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../CssFolder/Home.css'
-// import ring from './ringVideo.mp4';
 
 import {HomeTxt} from "../TextBlocks/TextBlocksEN";
 import ImageHolder from '../Components/ImageHolder'
 import Footers from "./Footers";
-import {Link} from "react-router-dom";
 
 const Home = () => {
-    const [type, SetType] = useState('none');
-    const changeType = (value) => () => {
-        SetType(value);
-    };
 
     return (
 
@@ -30,7 +24,7 @@ const Home = () => {
                                                                       imageClass={'imageHome'}
                                                                       parentClass={'imageHomeContainer'}
                                                                       textClass={'imgText'}
-                                                                      changeType={changeType}
+                                                                      changeType={()=>{}}
                                                                       path={item.path}
 
                     />)}

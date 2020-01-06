@@ -3,36 +3,133 @@ export const DesignTxt = {
         {
             url: 'bracelet.jfif',
             name: 'Bracelet',
-            path:'designSteps'
+            path: 'designStepTwo'
         },
         {
             url: 'earrings.webp',
             name: 'Earring',
-            path:'designSteps'
+            path: 'designStepTwo'
 
         },
         {
             url: 'necklace.jpg',
             name: 'Necklace',
-            path:'designSteps'
+            path: 'designStepTwo'
 
         },
         {
             url: 'ring.jpg',
             name: 'Ring',
-            path:'designSteps'
+            path: 'designStepTwo'
 
         }],
     titles: {
         "MainTitle": 'Create your own product',
         "Step1": 'Step 1: Choose type',
-        "Step2": 'Step 2: Choose a name'
-    }
+        "Step2": 'Step 2: Choose a name',
+        "baseStep":'Step 3: Choose the base material'
+    },
+    earring: [{
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Sexy lipstick",
+        tags: [{value: "Sexy lipstick"}]
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "EX",
+        tags: [{value: "EX"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Just FREEDOM",
+        tags: [{value: "Just FREEDOM"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Salty",
+        tags: [{value: "Salty"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Beach get away",
+        tags: [{value: "Beach get away"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Just relaxing",
+        tags: [{value: "Just relaxing"}]
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Winter has come",
+        tags: [{value: "Winter has come"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Jin & Tonic",
+        tags: [{value: "Jin & Tonic"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Relax ",
+        tags: [{value: "Free stone"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Blue way ",
+        tags: [{value: "Blue way"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Sophisticated ",
+        tags: [{value: "Sophisticated"}]
+
+
+    }, {
+        src: '../../../Photos/earrings.webp',
+        thumbnail:'../../../Photos/earrings.webp',
+        isSelected: false,
+        caption: "Mango shake",
+        tags: [{value: "Mango shake"}]
+
+
+    }]
+
 
 };
 export const MenuTxt = {
 
-    titles: {'Home':'Home', 'Explore':'Explore','Create': 'Create'}
+    titles: {'Home': 'Home', 'Explore': 'Explore', 'Create': 'Create'}
 };
 
 export const HomeTxt = {
@@ -40,19 +137,19 @@ export const HomeTxt = {
         {
             url: 'modelHome1.jpeg',
             name: 'Create your own style',
-            path:'design'
+            path: 'design'
 
         },
         {
             url: 'modelHome2.jpeg',
             name: 'Explore designs',
-            path:'explore'
+            path: 'explore'
 
         },
         {
             url: 'modelHome3.jpg',
             name: 'Create your own line',
-            path:'design'
+            path: 'design'
 
         }],
     titles: {
