@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../../CssFolder/Design.css'
-import {DesignTxt} from "../../TextBlocks/TextBlocksEN";
 import DesignLevelOne from "./DesignLevelOne";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import '../../CssFolder/Home.css'

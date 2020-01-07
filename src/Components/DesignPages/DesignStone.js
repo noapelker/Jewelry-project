@@ -12,7 +12,6 @@ class DesignStone extends Component {
         this.state = {
             images: DesignTxt.DBStones,
             chosenImages: [{}]
-
         };
 
     }
@@ -20,29 +19,17 @@ class DesignStone extends Component {
     onSelectImage = (index) => {
         let images = this.state.images.slice();
         let img = images[index];
-        if (img.isSelected) {
-            img.isSelected = false;
-            this.removeFromArray(img)
-        } else {
-            img.isSelected = true;
-            let selectedImages = this.state.chosenImages.slice();
-            selectedImages.push(images[index]);
-            this.setState({chosenImages: selectedImages})
+        let selectedImages = this.state.chosenImages.slice();
+        selectedImages.push(img);
+        this.setState({chosenImages: selectedImages})
 
-        }
 
     };
     removeFromArray = (value) => {
-
-        let images = this.state.chosenImages;
-        let i = 0;
-        while (images[i] !== value && i < images.length) {
-            i++;
-        }
-        for (let j = i; j < images.length - 1; j++) {
+        let images = this.state.chosenImages.slice();
+        for (let j = value; j < images.length - 1; j++) {
             images[j] = images[j + 1];
         }
-
         this.setState({
             chosenImages: images.slice(0, images.length - 1),
         });
@@ -62,13 +49,15 @@ class DesignStone extends Component {
                     <div className={'levelStoneContainer'}>
 
                         <div className={'sortModelParent'}>
-                            <div style={{display:'flex',flexDirection:'column'}}>
-                            <DesignModel image={DesignTxt.DBearring[this.props.base].src}/>
-                            <ChosenStones options={this.state.chosenImages}/>
+                            <div style={{display: 'flex', flexDirection: 'column',height:'fit-content'}}>
+                                <DesignModel image={DesignTxt.DBearring[this.props.base].src}/>
+                                <ChosenStones onSelectImage={this.removeFromArray}
+                                              options={this.state.chosenImages}/>
                             </div>
                             <div className={'stonesSubContainer'}>
                                 <SortMenu/>
                                 <Gallery images={this.state.images} rowHeight={110}
+                                         enableLightbox={true}
                                          onSelectImage={this.onSelectImage}
                                          showLightboxThumbnails={true} backdropClosesModal={true}/>
                             </div>

@@ -7,7 +7,8 @@ const SortMenu = props => {
     return (
         <div className={'sortMenuContainer'}>
             <Select placeholder={'Stones...'} options={DesignTxt.DBOptionsType} isMulti/>
-            <Select placeholder={'Colors...'} options={DesignTxt.DBOptionsColor}/>
+            <Select placeholder={'Colors...'} options={DesignTxt.DBOptionsColor} isMulti/>
+            <Select placeholder={'General...'} options={DesignTxt.DBOptionsGeneral}/>
         </div>
     );
 };

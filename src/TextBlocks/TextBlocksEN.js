@@ -48,7 +48,7 @@ export const DesignTxt = {
 
     }, {
         src: '../../../Photos/earrings.webp',
-        key:0,
+        key: 0,
         thumbnail: '../../../Photos/earrings.webp',
         caption: "Just FREEDOM",
         thumbnailWidth: 250,
@@ -62,7 +62,7 @@ export const DesignTxt = {
         thumbnailWidth: 250,
         thumbnailHeight: 200,
         caption: "Salty",
-        key:1,
+        key: 1,
         tags: [{value: "Salty", title: 'Salty'}]
 
 
@@ -70,7 +70,7 @@ export const DesignTxt = {
         src: '../../../Photos/earrings.webp',
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
-        key:2,
+        key: 2,
         thumbnailHeight: 200,
         caption: "Beach get away",
         tags: [{value: "Beach get away", title: 'Beach'}]
@@ -80,7 +80,7 @@ export const DesignTxt = {
         src: '../../../Photos/earrings.webp',
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
-        key:3,
+        key: 3,
         thumbnailHeight: 200,
         caption: "Just relaxing",
         tags: [{value: "Just relaxing", title: 'Relax'}]
@@ -89,7 +89,7 @@ export const DesignTxt = {
         src: '../../../Photos/earrings.webp',
         thumbnail: '../../../Photos/earrings.webp',
         caption: "Winter has come",
-        key:4,
+        key: 4,
         thumbnailWidth: 250,
         thumbnailHeight: 200,
         tags: [{value: "Winter has come", title: 'Winter'}]
@@ -100,7 +100,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
         thumbnailHeight: 200,
-        key:5,
+        key: 5,
         caption: "Jin & Tonic",
         tags: [{value: "Jin & Tonic", title: 'Jin'}]
 
@@ -110,7 +110,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
         thumbnailHeight: 200,
-        key:6,
+        key: 6,
         caption: "Relax ",
         tags: [{value: "Free stone", title: 'Free'}]
 
@@ -120,7 +120,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         caption: "Blue way ",
         thumbnailWidth: 250,
-        key:7,
+        key: 7,
         thumbnailHeight: 200,
         tags: [{value: "Blue way", title: 'Blue'}]
 
@@ -139,7 +139,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
         thumbnailHeight: 200,
-        key:4,
+        key: 4,
         caption: "Mango shake",
         tags: [{value: "Mango shake", title: 'Mango'}]
 
@@ -150,7 +150,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
         thumbnailHeight: 200,
-        key:0,
+        key: 0,
         caption: "Sexy lipstick",
         tags: [{value: "Sexy lipstick", title: 'Lipstick'}]
 
@@ -158,7 +158,7 @@ export const DesignTxt = {
         src: '../../../Photos/earrings.webp',
         thumbnail: '../../../Photos/earrings.webp',
         caption: "EX",
-        key:1,
+        key: 1,
         thumbnailWidth: 250,
         thumbnailHeight: 200,
         tags: [{value: "EX", title: 'EX'}]
@@ -168,7 +168,7 @@ export const DesignTxt = {
         src: '../../../Photos/earrings.webp',
         thumbnail: '../../../Photos/earrings.webp',
         caption: "Just FREEDOM",
-        key:2,
+        key: 2,
         thumbnailWidth: 250,
         thumbnailHeight: 200,
         tags: [{value: "Just FREEDOM", title: 'JustFreedom'}]
@@ -180,7 +180,7 @@ export const DesignTxt = {
         thumbnailWidth: 250,
         thumbnailHeight: 200,
         caption: "Salty",
-        key:3,
+        key: 3,
         tags: [{value: "Salty", title: 'Salty'}]
 
 
@@ -189,7 +189,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
         thumbnailHeight: 200,
-        key:4,
+        key: 4,
         caption: "Beach get away",
         tags: [{value: "Beach get away", title: 'Beach'}]
 
@@ -200,7 +200,7 @@ export const DesignTxt = {
         thumbnailWidth: 250,
         thumbnailHeight: 200,
         caption: "Just relaxing",
-        key:5,
+        key: 5,
         tags: [{value: "Just relaxing", title: 'Relax'}]
 
     }, {
@@ -208,7 +208,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         caption: "Winter has come",
         thumbnailWidth: 250,
-        key:6,
+        key: 6,
         thumbnailHeight: 200,
         tags: [{value: "Winter has come", title: 'Winter'}]
 
@@ -218,7 +218,7 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
         thumbnailHeight: 200,
-        key:7,
+        key: 7,
         caption: "Jin & Tonic",
         tags: [{value: "Jin & Tonic", title: 'Jin'}]
 
@@ -228,13 +228,13 @@ export const DesignTxt = {
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
         thumbnailHeight: 200,
-        key:8,
+        key: 8,
         caption: "Relax ",
         tags: [{value: "Free stone", title: 'Free'}]
 
 
     }, {
-        key:9,
+        key: 9,
         src: '../../../Photos/earrings.webp',
         thumbnail: '../../../Photos/earrings.webp',
         caption: "Blue way ",
@@ -247,7 +247,7 @@ export const DesignTxt = {
         src: '../../../Photos/earrings.webp',
         thumbnail: '../../../Photos/earrings.webp',
         thumbnailWidth: 250,
-        key:10,
+        key: 10,
         thumbnailHeight: 200,
         caption: "Sophisticated ",
         tags: [{value: "Sophisticated", title: 'Sophisticated'}]
@@ -259,10 +259,17 @@ export const DesignTxt = {
         thumbnailWidth: 250,
         thumbnailHeight: 200,
         caption: "Mango shake",
-        key:11,
+        key: 11,
         tags: [{value: "Mango shake", title: 'Mango'}]
 
 
+    }],
+    DBOptionsGeneral: [{value: 'Best sellers', label: 'Best sellers'}, {
+        value: 'Price: low to high',
+        label: 'Price: low to high'
+    }, {
+        value: 'Price: high to low',
+        label: 'Price: high to low'
     }],
     DBOptionsType: [{value: 'Diamond', label: 'Diamond'}, {
         value: 'Chen',
