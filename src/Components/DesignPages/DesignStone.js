@@ -17,7 +17,7 @@ class DesignStone extends Component {
     }
 
     onSelectImage = (index) => {
-        let images = this.state.images.slice();
+        let images = DesignTxt.DBStones.slice();
         let img = images[index];
         let selectedImages = this.state.chosenImages.slice();
         selectedImages.push(img);
@@ -56,7 +56,7 @@ class DesignStone extends Component {
                             </div>
                             <div className={'stonesSubContainer'}>
                                 <SortMenu/>
-                                <Gallery images={this.state.images} rowHeight={110}
+                                <Gallery images={DesignTxt.DBStones} rowHeight={110}
                                          enableLightbox={true}
                                          onSelectImage={this.onSelectImage}
                                          showLightboxThumbnails={true} backdropClosesModal={true}/>

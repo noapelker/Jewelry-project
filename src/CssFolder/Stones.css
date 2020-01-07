@@ -42,8 +42,6 @@
 }
 
 .sortModelParent {
-    margin-top: 60px;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
