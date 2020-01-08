@@ -284,7 +284,26 @@ export const MenuTxt = {
 
     titles: {'Home': 'Home', 'Explore': 'Explore', 'Create': 'Create'}
 };
+export const ExploreTxt = {
+    titles: {'AboutUs': 'About us','OurVision': 'Our vision'},
 
+    text: {
+        'AboutUs':
+            'For over a century, Logo watches have accompanied explorers ' +
+            'and achievers around the world, from the top of the highest mountains' +
+            ' to the deepest reaches of the ocean. Today, Rolex is present at the most' +
+            ' prestigious events in golf, sailing, tennis, motor sport, and at ' +
+            'equestrian tournaments. Rolex makes a unique and lasting contribution to global' +
+            ' culture, science and exploration.',
+        'OurVision': 'For over a century, Logo watches have accompanied explorers ' +
+            'and achievers around the world, from the top of the highest mountains' +
+            ' to the deepest reaches of the ocean. Today, Rolex is present at the most' +
+            ' prestigious events in golf, sailing, tennis, motor sport, and at ' +
+            'equestrian tournaments. Rolex makes a unique and lasting contribution to global' +
+            ' culture, science and exploration.'
+    }
+
+}
 export const HomeTxt = {
     images: [
         {

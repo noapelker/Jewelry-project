@@ -3,10 +3,7 @@ import {HomeTxt} from "../TextBlocks/TextBlocksEN";
 
 const Footers = props => {
     return (
-        <div className={"textContainerLast"}>
-            <span className={"homeTitle"}>{HomeTxt.titles.Explore}</span>
-            <p className={"homeText"}>{HomeTxt.text.Discover}
-            </p>
+
             <div className={'discoverParent'}>
                 <div className={'discoverContainer'}>
                     <div className={'discoverCol'}>
@@ -36,7 +33,6 @@ const Footers = props => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

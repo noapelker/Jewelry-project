@@ -1,0 +1,43 @@
+.videoContainer {
+    margin-top: 0;
+    overflow-x: hidden;
+
+}
+
+.videoClass {
+    width: 100vw;
+    margin-top: 0;
+    height: min-content;
+
+}
+
+.TextExplore {
+    font-size: 1.2em;
+}
+
+.textContainerExplore {
+    color: black;
+    margin: 100px 30% 20px 30%;
+    align-self: center;
+    height: 30vh;
+    text-align: center;
+
+}
+
+.TitleExplore {
+    font-size: 1.7em;
+}
+
+.exploreImg {
+    width: 30%;
+    height: 40vh;
+    margin: 50px 35% 100px 35%;
+
+}
+
+.TextExploreSec {
+    align-self: center;
+    margin: 100px 30% 100px 30%;
+    text-align: center;
+
+}

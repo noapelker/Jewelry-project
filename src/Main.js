@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Create from "./Components/Create";
 import Explore from "./Components/Explore";
 import '../src/CssFolder/Design.css'
+import Footers from "./Components/Footers";
 
 class Main extends Component {
 
@@ -15,21 +16,26 @@ class Main extends Component {
     }
 
 
-
     render() {
         return (
-            <BrowserRouter>
-                <div>
-                    <Switch>
-                        <Route exact path="/" component={Home}/>
-                        <Route exact path={["/design", "/designBase", "/designStone"]} component={() => <Design/>}/>
-                        <Route exact path="/create" component={Create}/>
-                        <Route exact path="/explore" component={Explore}/>
-                    </Switch>
-                    <Menu/>
+            <div>
+                <BrowserRouter>
+                    <div>
+                        <Switch>
+                            <Route exact path="/" component={Home}/>
+                            <Route exact path={["/design", "/designBase", "/designStone"]}
+                                   component={() => <Design/>}/>
+                            <Route exact path="/create" component={Create}/>
+                            <Route exact path="/explore" component={Explore}/>
+                        </Switch>
+                        <Menu/>
+                    </div>
 
-                </div>
-            </BrowserRouter>
+                </BrowserRouter>
+                <Footers/>
+            </div>
+
+
         )
             ;
     }
