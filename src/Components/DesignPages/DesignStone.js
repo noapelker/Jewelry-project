@@ -49,7 +49,11 @@ class DesignStone extends Component {
                     <div className={'levelStoneContainer'}>
 
                         <div className={'sortModelParent'}>
-                            <div style={{display: 'flex', flexDirection: 'column',height:'fit-content'}}>
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                height: 'fit-content'
+                            }}>
                                 <DesignModel image={DesignTxt.DBearring[this.props.base].src}/>
                                 <ChosenStones onSelectImage={this.removeFromArray}
                                               options={this.state.chosenImages}/>
