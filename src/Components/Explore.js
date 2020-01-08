@@ -3,15 +3,17 @@ import Presentation from './Explore video.mp4';
 import '../CssFolder/Explore.css'
 import {ExploreTxt} from "../TextBlocks/TextBlocksEN";
 import img from './DreamExplore.png';
+import ReactPlayer from "react-player";
 
 const Explore = props => {
+
     return (
         <div className={'exploreContainer'}>
             <div className={'videoContainer'}>
-                <video className={'videoClass'} height={'20vh'} autoPlay={true} loop={true}
-                       muted={true} >
-                    <source src={Presentation} type='video/mp4'/>
-                </video>
+                <ReactPlayer url={Presentation} width={'100vw'} playbackRate={5.0} height={'unset'} className={'videoClass'} playing={true} loop={true}
+                       muted={true} playbackrate="2" >
+
+                </ReactPlayer>
             </div>
             <div className={'textContainerExplore'}>
                 <span className={'TitleExplore'}>

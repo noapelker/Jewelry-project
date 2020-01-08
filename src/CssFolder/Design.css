@@ -65,10 +65,11 @@ a{
 .enable-link {
     pointer-events: unset;
     opacity:1;
+    position: absolute;
     transition: all .2s;
 }
 .enable-link:hover {
-    transform:scale(1.5);
+opacity: 0.8;
 }
 .textBase{
     color: #212121;
@@ -185,7 +186,6 @@ a{
 .designPageContainer {
     height: 100vh;
     width: 100vw;
-    position: absolute;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;

@@ -23,7 +23,6 @@ class DesignStone extends Component {
         selectedImages.push(img);
         this.setState({chosenImages: selectedImages})
 
-
     };
     removeFromArray = (value) => {
         let images = this.state.chosenImages.slice();

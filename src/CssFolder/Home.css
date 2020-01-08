@@ -20,7 +20,6 @@
 .discoverParent {
     background-color: #212121;
     display: flex;
-    margin-top: 15vh;
     padding-bottom: 50px;
     justify-content: center;
     width: 100%;
@@ -60,6 +59,7 @@
 }
 .textContainerLast {
     margin-top: 15vh;
+    margin-bottom: 15vh;
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
